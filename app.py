@@ -12,7 +12,7 @@ JOBS=[
 @app.route("/")
 def hello_world():
   return render_template('home.html', joblar=JOBS,
-                        company_name="Jovian")
+                        title="Statistics and Machine Learning Journey")
 
 @app.route("/api/jobs")
 def list_jobs():

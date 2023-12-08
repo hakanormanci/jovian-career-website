@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Jovian Careers
+      Statistics and Machine Learning Journey
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +16,9 @@
     </style>
   </head>
   <body>
+    {% include "nav.html" %}
     <div class="container">
-    <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
+    <h1 class="text-center mt-2 mb-4">{{title}}</h1>
     <img class="img-fluid" id="banner" src="https://jovian-career-website.hakanormanc.repl.co/static/banner.jpg">
     <h2 class="text-center mt-2 mb-4">Jovian Careers</h2>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est placerat in egestas erat imperdiet sed euismod nisi porta. Fringilla est ullamcorper eget nulla facilisi. Massa enim nec dui nunc mattis. Pellentesque massa placerat duis ultricies lacus sed turpis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Amet massa vitae tortor condimentum lacinia quis vel.</p>
@@ -27,9 +28,8 @@
         {% include "jobitem.html" %}
       {% endfor %}
       </div>
-      <div class="text-center">
-    <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Jovian</p>
+      <div>
+      {% include "footer.html" %}
       </div>
     </div>
   </body>
